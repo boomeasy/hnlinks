@@ -1,0 +1,4 @@
+span.comment a  { background: yellow; }
+span.comment a:visited  { background: pink; }
+span.comment u > a  { background: none }
+span.comment u > a:visited  { background: none; }
