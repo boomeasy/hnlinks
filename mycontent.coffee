@@ -15,7 +15,7 @@ lohref.innerHTML = "LinksOnly (#{links.length})"
 # make home page links open in new window
 links = document.querySelectorAll('.title a')
 for link in links
-  link.target = "_blank"
+  link.target = "_blank" if link.text != "More"
     
 linksOnly = false
 toggleLinks = ->

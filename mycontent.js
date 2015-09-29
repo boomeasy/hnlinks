@@ -22,7 +22,9 @@ links = document.querySelectorAll('.title a');
 
 for (j = 0, len1 = links.length; j < len1; j++) {
   link = links[j];
-  link.target = "_blank";
+  if (link.text !== "More") {
+    link.target = "_blank";
+  }
 }
 
 linksOnly = false;
